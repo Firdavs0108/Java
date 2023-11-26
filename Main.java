@@ -1,16 +1,19 @@
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import class_1.Arraylist;
 import class_1.Codewars;
+
 
 public class Main {
 
 
     public static void main(String[] args) {
+
        Codewars example = null;
+
       try {
         int[] a = {1, 2, 3, 4, 5};
         int[] b = null;
@@ -21,11 +24,11 @@ public class Main {
           System.out.println("Sorry file is not found. " + e.getMessage());
       }
 
-      if (example != null) {
-        System.out.println(example);
-      } else{
-        System.out.println("Make sure about your mistake.Try again");
-      }
+      // if (example != null) {
+      //   System.out.println(example);
+      // } else{
+      //   System.out.println("Make sure about your mistake.Try again");
+      // }
 
         
 
