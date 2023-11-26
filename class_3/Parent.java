@@ -1,6 +1,6 @@
 package class_3;
 
-public class Parent {
+public abstract class Parent {
 
     private String name;
     private int age;
@@ -25,6 +25,10 @@ public class Parent {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void printMessage(){
+        System.out.println("Message from Parent class " );
     }
 
 

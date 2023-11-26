@@ -4,7 +4,7 @@ public class Child1 extends Parent {
 
     private String model;
 
-    public Child1(String model, String name, int age){
+    public Child1( String name, int age, String model){
         super(name, age);
         this.model = model;
     }
@@ -16,6 +16,14 @@ public class Child1 extends Parent {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    
+
+    @Override
+    public void printMessage() {
+        System.out.println("Hello from " + getClass().getSimpleName().toLowerCase());
+
     }
 
 
