@@ -12,11 +12,13 @@ public static void main(String[] args) {
     System.out.println(Arrays.toString(names));
     System.out.println(names[2]);
 
-    String[] newNames = new String[10];
+    String[] newNames = Arrays.copyOf(names, names.length);
 
-    for (int i = 0; i < names.length; i++) {
-        newNames[i] = names[i];
-    }
+    // for (int i = 0; i < names.length; i++) {
+    //     newNames[i] = names[i];
+    // }
+
+    
 
     // newNames[2];
     System.out.println(names[1]);

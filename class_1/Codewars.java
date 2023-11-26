@@ -18,11 +18,25 @@ public class Codewars {
 
 
         public static int[] mergeArrays(int[] a, int[] b) {
+            if (a == null || b == null) {
+                throw new RuntimeException("Input arrays cannot be null");
+            } else{
+                System.out.println("Very nice");
+            }
            return IntStream.concat(Arrays.stream(a), Arrays.stream(b))
            .distinct()
            .toArray();
+
+           
         }
+
+        @Override
+        public String toString() {
+            return "This is example of " + mergeArrays(null, null);
+        }
+       
     }
+    
 
     
     
